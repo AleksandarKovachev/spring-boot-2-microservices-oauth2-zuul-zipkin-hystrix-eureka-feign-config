@@ -8,5 +8,6 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>eureka-service</module>
+		<module>config-service</module>
 	</modules>
 </project>
