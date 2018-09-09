@@ -1,0 +1,12 @@
+server:
+  port: 8889
+spring:
+  application:
+    name: admin-server
+  cloud:
+    config:
+      uri: http://localhost:8888
+  security:
+    user:
+      name: "user"
+      password: "password"
