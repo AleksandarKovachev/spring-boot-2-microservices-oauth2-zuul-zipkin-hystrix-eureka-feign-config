@@ -10,6 +10,8 @@ eureka:
     registryFetchIntervalSeconds: 5
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      healthcheck:
+        enabled: true
 management:
   endpoints:
     web:
@@ -18,3 +20,19 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8889
+        instance:
+          service-base-url: http://localhost:8889
+          metadata:
+            user.name: ${spring.security.user.name}
+            user.password: ${spring.security.user.password}
+        password: ${spring.security.user.name}
+        username: ${spring.security.user.password}
+  security:
+    user:
+      name: "admin"
+      password: "admin"

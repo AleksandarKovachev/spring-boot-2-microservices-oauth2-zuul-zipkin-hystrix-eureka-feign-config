@@ -1,0 +1,15 @@
+server:
+  port: 8890
+spring:
+  application:
+    name: monitoring-server
+  cloud:
+    config:
+      uri: http://localhost:8888
+security.basic.enabled: false
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: dummy-service
+  stream:
+    port: 8890

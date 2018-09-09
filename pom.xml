@@ -9,5 +9,7 @@
 	<modules>
 		<module>eureka-service</module>
 		<module>config-service</module>
+		<module>admin-server</module>
+		<module>hystrix-dashboard</module>
 	</modules>
 </project>
