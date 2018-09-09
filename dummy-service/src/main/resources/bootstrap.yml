@@ -1,0 +1,29 @@
+server:
+  port: 8891
+spring:
+  application:
+    name: monitoring-server
+  cloud:
+    config:
+      uri: http://localhost:8888
+security.basic.enabled: false
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: dummy-service
+  stream:
+    port: 8890
+feign:
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 3000
