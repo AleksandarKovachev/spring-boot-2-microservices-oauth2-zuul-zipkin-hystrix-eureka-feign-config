@@ -11,5 +11,7 @@
 		<module>config-service</module>
 		<module>admin-server</module>
 		<module>hystrix-dashboard</module>
+		<module>dummy-service</module>
+		<module>zipkin-server</module>
 	</modules>
 </project>

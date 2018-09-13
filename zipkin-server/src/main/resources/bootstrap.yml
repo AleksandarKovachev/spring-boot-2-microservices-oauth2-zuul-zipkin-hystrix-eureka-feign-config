@@ -1,0 +1,8 @@
+server:
+  port: 8891
+spring:
+  application:
+    name: zipkin-server
+  cloud:
+    config:
+      uri: http://localhost:8888

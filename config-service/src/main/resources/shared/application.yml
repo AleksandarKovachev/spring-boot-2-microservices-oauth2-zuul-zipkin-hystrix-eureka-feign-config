@@ -21,6 +21,8 @@ management:
     health:
       show-details: ALWAYS
 spring:
+  zipkin:
+    base-url: http://localhost:8891
   boot:
     admin:
       client:

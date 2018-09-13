@@ -1,5 +1,5 @@
 server:
-  port: 8891
+  port: 8892
 spring:
   application:
     name: monitoring-server
