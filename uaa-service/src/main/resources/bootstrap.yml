@@ -1,0 +1,22 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: uaa-service
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/example
+    username: root
+    password: 
+  jpa:
+    database: mysql
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  cloud:
+    config:
+      uri: http://localhost:8888
+check-user-scopes: true
+keystore: jwt.jks
+keystore-alias: jwt
+keystore-password: passw0rd

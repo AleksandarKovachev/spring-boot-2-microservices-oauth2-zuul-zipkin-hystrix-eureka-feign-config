@@ -13,5 +13,6 @@
 		<module>hystrix-dashboard</module>
 		<module>dummy-service</module>
 		<module>zipkin-server</module>
+		<module>uaa-service</module>
 	</modules>
 </project>
